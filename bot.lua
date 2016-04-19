@@ -6,7 +6,7 @@ JSON = require('dkjson')
 HTTPS = require('ssl.https')
 dofile('utilities.lua')
 ----config----
-local bot_api_key = "" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
+local bot_api_key = "182424399:AAFuqj4XZEXkGpsWIOz6EBSpp9EZBHl0mxM" --BOT TOKEN تو کن ربات خود را در اینجا قرار دهید
 local You = 176894771  --ID ADMIN ایدی خود را اینجا قرار دهید
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
@@ -363,7 +363,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "سلام پیامتو بزار به موقع جواب میدم["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید]https://telegram.me/love_text_channelT)"
+local text = "سلام پیامتو بزار به موقع جواب میدم["..msg.from.first_name.."](www.telegram.me/"..user..")\n\[ای دی کانال ما]( https://telegram.me/love_text_channel)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif msg.text == "/start" and is_add(msg) then
  	print(#add.id)
@@ -373,7 +373,7 @@ user = bot.username
 else
 user = msg.from.username
 end
-local text = "سلام ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\n[ربات خود را بسازید]https://telegram.me/love_text_channelT)"
+local text = "سلام پیامتو بزار به موقع جواب میدم ["..msg.from.first_name.."](www.telegram.me/"..user..")\n\[ای دی کانال ما]( https://telegram.me/love_text_channel)"
 sendMessage(msg.chat.id,text.."\n"..start,true,false,true)
 elseif is_admin(msg) and msg.text == "/users" then
  	local r = tostring(#add.id)
